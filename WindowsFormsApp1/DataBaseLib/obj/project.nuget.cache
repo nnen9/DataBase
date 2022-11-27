@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "RDrAsi0hYPtQN7l/WrpStxsw7yFZH5rn7aMcsoCmSmvxhX2KKBSYJrXQlG586I1A0Ocv1B+SiFRUwguuy5qRdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gigry\\Documents\\GitHub\\DataBase\\DataBase\\WindowsFormsApp1\\DataBaseLib\\DataBaseLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gigry\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.data.oledb\\6.0.0\\system.data.oledb.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.0\\system.diagnostics.performancecounter.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\gigry\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
