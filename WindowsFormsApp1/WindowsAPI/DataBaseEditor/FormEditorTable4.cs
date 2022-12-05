@@ -11,14 +11,14 @@ using DataBaseLib;
 
 namespace WindowsFormsApp1.DataBaseEditor
 {
-    public partial class FormEditorTable1 : Form
+    public partial class FormEditorTable4 : Form
     {
-        public FormEditorTable1()
+        public FormEditorTable4()
         {
             InitializeComponent();
         }
 
-        string _tableName = "Основная";
+        string _tableName = "Название";
 
         private void Table1_Load(object sender, EventArgs e)
         {
@@ -28,12 +28,9 @@ namespace WindowsFormsApp1.DataBaseEditor
 
         private void BtnInsert_Click(object sender, EventArgs e)
         {
-            string[] args = new string[5];
+            string[] args = new string[2];
             args[0] = textBox4.Text;
             args[1] = textBox1.Text;
-            args[2] = textBox2.Text;
-            args[3] = textBox3.Text;
-            args[4] = textBox5.Text;
 
             DataBaseCommadsManager manager = new DataBaseCommadsManager();
             manager.Insert(args, _tableName);
@@ -52,19 +49,14 @@ namespace WindowsFormsApp1.DataBaseEditor
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            string[] args = new string[7];
+            string[] args = new string[4];
             args[0] = textBox4.Text;
             args[1] = textBox1.Text;
-            args[2] = textBox2.Text;
-            args[3] = textBox3.Text;
-            args[4] = textBox5.Text;
             button1.Enabled = true;
             button2.Enabled = true;
             DataBaseCommadsManager manager = new DataBaseCommadsManager();
             manager.Update(args, _tableName);
             dataGridView1.DataSource = manager.GetDataTable(_tableName);
         }
-
-
     }
 }

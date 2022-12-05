@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataBaseLib.Commands
 {
-    internal class Table1Commands : ITableEditorCommand
+    internal class Table2Commands : ITableEditorCommand
     {
         // ЕСЛИ нужна другая БД, просто меняем AccessDataBaseController
         // на нужную, например SQLiteDataBaseController
@@ -21,24 +21,24 @@ namespace DataBaseLib.Commands
 
         public void Insert(string[] args)
         {            
-            string query = $"INSERT INTO [Основная] " +
-                    $"([Код], [Код названия], [Код режима], [Код жанра], [Код студии]) " +
-                    $"VALUES ({args[0]}, {args[1]}, {args[2]}, {args[3]}, {args[4]})";
+            string query = $"INSERT INTO [Жанр] " +
+                    $"([Код жанра игры], [Жанр игры]) " +
+                    $"VALUES ({args[0]}, '{args[1]}')";
             controller.ExecuteCommand(query);
         }
 
         public void Update(string[] args)
         {
-            string query = @$"UPDATE [Основная]
-                    SET [Код названия] = {args[1]}, [Код режима] = {args[2]}, [Код жанра] = {args[3]}, [Код студии] = {args[4]}
-                    WHERE [Код] = {args[0]}";
+            string query = @$"UPDATE [Жанр]
+                    SET [Жанр игры] = '{args[1]}'
+                    WHERE [Код жанра игры] = {args[0]}";
             controller.ExecuteCommand(query);
         }
 
         public void Delete(string[] args)
         {
-            string query = $"DELETE FROM [Основная] " +
-                    $"WHERE [Код] = {args[0]}";
+            string query = $"DELETE FROM [Жанр] " +
+                    $"WHERE [Код жанра игры] = {args[0]}";
             controller.ExecuteCommand(query);
         }
 
